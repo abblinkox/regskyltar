@@ -1,0 +1,1 @@
+<annotations><filename>00000620.JPEG</filename><folder>images</folder><size><width>720</width><height>960</height><depth>3</depth></size><object><name>Registreringsskylt</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>3.0</xmin><ymin>851.0</ymin><xmax>85.0</xmax><ymax>892.0</ymax></bndbox></object></annotations>
