@@ -21,8 +21,8 @@ import requests, time,json, re
 pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesseract.exe"
 
 
-DEFAULT_CONFIG_FILE = "regskyltar.json"
-DEFAULT_WEIGHT_FILE = "model.h5"
+DEFAULT_CONFIG_FILE = "model/regskyltar.json"
+DEFAULT_WEIGHT_FILE = "model/model.h5"
 DEFAULT_THRESHOLD = 0.3
 
 
