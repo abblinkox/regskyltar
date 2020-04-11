@@ -25,6 +25,7 @@ tredje är tesseract-OCR som används för att läsa av text från bild och sist
 - Scriptet som kör programmet
 ## Installation och körning
 ### Installation
+Klona denna github till din dator
 #### Program som måste installeras
 - Python 3.7 64 bit med pip
 - tesseract-ocr
@@ -40,5 +41,4 @@ tredje är tesseract-OCR som används för att läsa av text från bild och sist
 För att installera skriv pip install och namnet på biblioteket på terminalen
 ## Körning
 - Starta evaluate.py och kör filen
-
 
