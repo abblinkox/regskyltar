@@ -55,6 +55,9 @@ Jag har använt openCV för att öppna och redigera bilder. OpenCV analyserar va
 När jag fått en bild på endast registreringsskylten kör jag tesseract-OCR på bilden för att få ut bilens registreringsnummer. Regex används också för att se till att texten jag får ut passar in i möstret (3 bokstäver + 2 siffror + siffra/bokstav). 
 ### Web Scraping 
 När jag fått ut ett registreringsnummer som passar in i mönstret använder jag mig av bs4 för att hämta information om bilen från biluppgifter.se. Informationen ritas sedan ut på bilden.
-
 ### En förenklad bild av hela processen: 
 Bild -> objektigenkänning -> bild beskärs -> OCR läser text -> Regex tittar om mönstret passar -> bs4 -> Bilens info ritas på bild 
+## Problem under arbetet
+Det uppstod flera problem under arbetet, här är några och hur jag löste dem:
+- Texten som OCR hittade i bilderna stämde inte in i möstret av en vanlig registreringsskylt. För att kunna få ut information om bilar måste texten stämma in i möstret och därför använde jag regular expressions (Regex). Regex tittar om texten från OCR stämmer in i möstret och kan  på så sätt godkänna texten så att den kan användas för att söka upp information.
+-
