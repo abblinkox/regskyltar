@@ -6,8 +6,9 @@ tredje är tesseract-OCR som används för att läsa av text från bild och sist
 
 ## Mapparna och deras innehåll
 ### Model
-#### Model – Innehåller filerna till den tränade modellen.
+Innehåller filerna till den tränade modellen.
 - model.h5 - filen som innehåller den tränade modellen för registreringsskyltarna      
 - classes.txt - textfil som innehåller klasserna till modellen       
 - regskyltar.json – config fil till modellen    
-
+### testing_images
+Innehåller bilderna från datasetet
