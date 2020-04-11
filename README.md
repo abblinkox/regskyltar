@@ -52,8 +52,9 @@ Jag har använt denna [Google Colab](https://colab.research.google.com/drive/1UK
 ### Bildhanteringen
 Jag har använt openCV för att öppna och redigera bilder. OpenCV analyserar varje frame i en video. Varje frame i videon går igenom modellen, och om modellen hittar en registreringsskylt i bilden får vi ut koordinater där registreringsskylten är. Då kommer openCV att beskära bilden till de koordinaterna. 
 ### OCR
-När vi fått en bild på endast registreringsskylten kör vi tesseract-OCR på bilden för att få ut bilens registreringsnummer. Regex används också för att se till att texten vi får ut passar in i möstret (3 bokstäver + 2 siffror + siffra/bokstav). 
+När jag fått en bild på endast registreringsskylten kör jag tesseract-OCR på bilden för att få ut bilens registreringsnummer. Regex används också för att se till att texten jag får ut passar in i möstret (3 bokstäver + 2 siffror + siffra/bokstav). 
 ### Web Scraping 
-När vi fått ut ett registreringsnummer som passar in i mönstret använder jag mig av bs4 för att hämta information om bilen från biluppgifter.se. Informationen visas sedan på framen i videon.
+När jag fått ut ett registreringsnummer som passar in i mönstret använder jag mig av bs4 för att hämta information om bilen från biluppgifter.se. Informationen ritas sedan ut på bilden.
 
-
+### En förenklad bild av hela processen: 
+Bild -> objektigenkänning -> bild beskärs -> OCR läser text -> Regex tittar om mönstret passar -> bs4 -> Bilens info ritas på bild 
