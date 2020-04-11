@@ -19,3 +19,7 @@ tredje är tesseract-OCR som används för att läsa av text från bild och sist
 - download.py - script för att ladda ner bilder från blocket
 - label_tool.py - script för att konvertera yolo annotations till voc format
 - renamer.py - script för att byta namn på filer
+### yolo
+- mappen till alla yolo filer
+### evaluate.py
+- Scriptet som kör programmet
