@@ -23,3 +23,19 @@ tredje är tesseract-OCR som används för att läsa av text från bild och sist
 - mappen till alla yolo filer
 ### evaluate.py
 - Scriptet som kör programmet
+## Installation och körning
+### Installation
+- Python 3.7 64 bit med pip
+- tesseract-ocr
+#### Python bibliotek som måste installeras
+- tensorflow 1.14.0 (pip install tensorflow == 1.14.0)
+- pytesseract
+- opencv-python 
+- numpy 
+- bs4  
+- requests 
+- keras 
+- imgaug 
+För att installera skriv pip install och namnet på biblioteket på terminalen
+
+
