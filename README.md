@@ -38,5 +38,7 @@ tredje är tesseract-OCR som används för att läsa av text från bild och sist
 - keras 
 - imgaug 
 För att installera skriv pip install och namnet på biblioteket på terminalen
+## Körning
+- Starta evaluate.py och kör filen
 
 
