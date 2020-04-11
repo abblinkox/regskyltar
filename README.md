@@ -11,4 +11,4 @@ Innehåller filerna till den tränade modellen.
 - classes.txt - textfil som innehåller klasserna till modellen       
 - regskyltar.json – config fil till modellen    
 ### testing_images
-Innehåller bilderna från datasetet
+Innehåller test videon
