@@ -53,17 +53,6 @@ argparser.add_argument(
     default='testing_images',
     help='path to images')
 
-def create_ann(filename, image, boxes, right_label, label_list):
-    copyfile(os.path.join(args.path,filename), 'test_img/'+filename)
-    writer = Writer(os.path.join(args.path,filename), 224, 224)
-    print(right_label)
-    for i in range(len(right_label)):
-    	writer.addObject(label_list[right_label[i]], boxes[i][0], boxes[i][1], boxes[i][2], boxes[i][3])
-    name = filename.split('.')
-    writer.save('test_ann/'+name[0]+'.xml')
-
-
-
 def hittaskylt(skylt):
     r = requests.get("https://biluppgifter.se/fordon/" + skylt)
 
