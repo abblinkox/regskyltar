@@ -65,4 +65,4 @@ Det uppstod flera problem under arbetet, här är några och hur jag löste dem:
 Jag anser att detta projekt har förbättrings- och utvecklingsmöjligheter. Här är några:
 - Då datasetet som modellen är tränad ifrån är ifrån bilar från blocket och inte bilar på trafiken är den inte så träffsäker som den behöver vara. Modellen skulle alltså kunna tränas på ett dataset från bilar i riktig trafik. Anledningen till att jag inte gjorde detta är at det är väldigt svårt att hitta ett så stort dataset från bilar i trafik.
 - Tesseract-OCR fungerar inte optimalt då bokstäverna på registreringsskyltarna måste nästan alltid vara raka. Detta är något som nästan aldrig händer och därför får man inte bra avläsningar på många bilder. För att lösa detta måste bilderna manipuleras för att få bort vinklarna. Jag vet inte för tillfället hur man gör det men det är en ide för framtiden. 
-- 
+- Prestandan på programmet är också en förbätrringsmöjlighet, då programmet nu tar lång tid för att få ut resultat samt att programmet kör på väldigt låga FPS.
