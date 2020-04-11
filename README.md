@@ -50,7 +50,7 @@ Projektet kan delas upp i 4 delar:
 ### Tränade modellen
 Jag har använt denna [Google Colab](https://colab.research.google.com/drive/1UK3MejBT9bzFbgmBVmBEmUR7CyC9wqTk) fil för att träna min modell. Jag har tagit fram mitt dataset för träningen av modellen genom ett script som hämtade bilder från blocket.
 ### Bildhanteringen
-Jag har använt openCV för att öppna och redigera bilder. OpenCV analyserar varje frame i en video. Varje frame i videon går igenom modellen, och om modellen hittar en registreringsskylt i bilden får vi ut koordinater där registreringsskylten är. Då kommer openCV att beskära bilden till de koordinaterna. 
+Jag har använt openCV för att öppna och redigera bilder. OpenCV analyserar varje frame i en video. Varje frame i videon går igenom modellen, och om modellen hittar en registreringsskylt i bilden får vi ut koordinater där registreringsskylten är. Bilden kommer då att beskäras  till de koordinaterna. 
 ### OCR
 När jag fått en bild på endast registreringsskylten kör jag tesseract-OCR på bilden för att få ut bilens registreringsnummer. Regex används också för att se till att texten jag får ut passar in i möstret (3 bokstäver + 2 siffror + siffra/bokstav). 
 ### Web Scraping 
