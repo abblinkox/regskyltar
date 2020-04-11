@@ -6,9 +6,16 @@ tredje är tesseract-OCR som används för att läsa av text från bild och sist
 
 ## Mapparna och deras innehåll
 ### Model
-Innehåller filerna till den tränade modellen.
 - model.h5 - filen som innehåller den tränade modellen för registreringsskyltarna      
 - classes.txt - textfil som innehåller klasserna till modellen       
 - regskyltar.json – config fil till modellen    
 ### testing_images
-Innehåller test videon
+- test1.mp4 - testvideon
+### training
+- labels - innehåller bilder och markeringar i textfiler
+- annotationsXML - innehåller alla annotations i XML format
+- images - innehåller datasetet som används för träningen av modellen
+- annotations.py - program för att kunna skapa annotations på bilderna
+- download.py - script för att ladda ner bilder från blocket
+- label_tool.py - script för att konvertera yolo annotations till voc format
+- renamer.py - script flr att byta namn på filer
