@@ -41,11 +41,19 @@ Klona denna github till din dator
 För att installera skriv pip install och namnet på biblioteket på terminalen
 ### Körning
 - Starta evaluate.py och kör filen
-## Hur gjorde jag?
+## Hur fungerar det?
 Projektet kan delas upp i 4 delar:
 - Tränade modellen 
 - Bildhanteringen
-- Textigenkänningen
-- Information framtagningen
+- OCR
+- Web Scraping
 ### Tränade modellen
-Jag använde denna [Google Colab](https://colab.research.google.com/drive/1UK3MejBT9bzFbgmBVmBEmUR7CyC9wqTk) fil för att träna min modell. Jag tog fram mitt dataset för träningen genom ett script som hämtade bilder från blocket.
+Jag har använt denna [Google Colab](https://colab.research.google.com/drive/1UK3MejBT9bzFbgmBVmBEmUR7CyC9wqTk) fil för att träna min modell. Jag har tagit fram mitt dataset för träningen av modellen genom ett script som hämtade bilder från blocket.
+### Bildhanteringen
+Jag har använt openCV för att öppna och redigera bilder. OpenCV analyserar varje frame i en video. Varje frame i videon går igenom modellen, och om modellen hittar en registreringsskylt i bilden får vi ut koordinater där registreringsskylten är. Då kommer openCV att beskära bilden till de koordinaterna. 
+### OCR
+När vi fått en bild på endast registreringsskylten kör vi tesseract-OCR på bilden för att få ut bilens registreringsnummer. Regex används också för att se till att texten vi får ut passar in i möstret (3 bokstäver + 2 siffror + siffra/bokstav). 
+### Web Scraping 
+När vi fått ut ett registreringsnummer som passar in i mönstret använder jag mig av bs4 för att hämta information om bilen från biluppgifter.se. Informationen visas sedan på framen i videon.
+
+
