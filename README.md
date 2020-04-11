@@ -39,6 +39,6 @@ Klona denna github till din dator
 - keras 
 - imgaug 
 För att installera skriv pip install och namnet på biblioteket på terminalen
-## Körning
+### Körning
 - Starta evaluate.py och kör filen
 
