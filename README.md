@@ -41,4 +41,11 @@ Klona denna github till din dator
 För att installera skriv pip install och namnet på biblioteket på terminalen
 ### Körning
 - Starta evaluate.py och kör filen
-
+## Hur gjorde jag?
+Projektet kan delas upp i 4 delar:
+- Tränade modellen 
+- Bildhanteringen
+- Textigenkänningen
+- Information framtagningen
+### Tränade modellen
+Jag använde denna [Google Colab](https://colab.research.google.com/drive/1UK3MejBT9bzFbgmBVmBEmUR7CyC9wqTk) fil för att träna min modell. Jag tog fram mitt dataset för träningen genom ett script som hämtade bilder från blocket.
