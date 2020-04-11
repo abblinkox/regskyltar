@@ -1,9 +1,8 @@
 # AI projekt Lindrit Koxha
-
+Detta är ett AI-projekt som går ut på att en tränad AI kan detektera och läsa av bilars registreringsskyltar.
 Projektet består av fyra stora delar. 
 Första delen är keras-yolo som används för att hitta registreringsskyltar, andra är openCV för bildredigering, 
 tredje är tesseract-OCR som används för att läsa av text från bild och sista delen är webscraping för att få fram information om bilar.
-
 ## Mapparna och deras innehåll
 ### Model
 - model.h5 - filen som innehåller den tränade modellen för registreringsskyltarna      
@@ -60,4 +59,11 @@ Bild -> objektigenkänning -> bild beskärs -> OCR läser text -> Regex tittar o
 ## Problem under arbetet
 Det uppstod flera problem under arbetet, här är några och hur jag löste dem:
 - Texten som OCR hittade i bilderna stämde inte in i möstret av en vanlig registreringsskylt. För att kunna få ut information om bilar måste texten stämma in i möstret och därför använde jag regular expressions (Regex). Regex tittar om texten från OCR stämmer in i möstret och kan  på så sätt godkänna texten så att den kan användas för att söka upp information.
--
+- Ett liknande problem var att även om texten stämde in på mönstret så kunde den vara för lång, tex. att det fanns en bokstav för mycket i mitten osv. En enkel IF-sats i koden löste detta problem då den tittade om texten matchade regex möstret och om den hade 6 st tecken.
+## Förbättringsmöjligheter
+Jag anser att detta projekt har förbättringsmöjligheter. Här är några:
+- Då datasetet som modellen är tränad ifrån är ifrån bilar från blocket och inte bilar på trafiken är den inte så träffsäker som den behöver vara. Modellen skulle alltså kunna tränas på ett dataset från bilar i riktig trafik. Anledningen till att jag inte gjorde detta är at det är väldigt svårt att hitta ett så stort dataset från bilar i trafik.
+- Tesseract-OCR fungerar inte optimalt då bokstäverna på registreringsskyltarna måste nästan alltid vara raka. Detta är något som nästan aldrig händer och därför får man inte bra avläsningar på många bilder. För att lösa detta måste bilderna manipuleras för att få bort vinklarna. Jag vet inte för tillfället hur man gör det men det är en ide för framtiden. 
+- Prestandan på programmet är också en förbätrringsmöjlighet, då programmet nu tar lång tid för att få ut resultat samt att programmet kör på väldigt låga FPS.
+## Utvecklingsmöjligheter
+Detta projekt skulle kunna integreras i olika dashcams på bilar, något som skulle kunna vara användbart för tex. polisen. Detta förutsätter såklart att projektet utvecklas tills det blir väldigt träffsäkert och snabbt. Detta skulle också kunna integreras i hastighetskameror, genom att direkt kunna skicka böter till ägarna av fortkörande bilar. 
